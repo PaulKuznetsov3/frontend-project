@@ -3,7 +3,7 @@ import { useTheme } from 'app/provider/ThemeProvider';
 import { classNames } from 'shared/lib/classNames/classNames';
 import { NavBar } from 'widgets/NavBar';
 import { Sidebar } from 'widgets/Sidebar/ui/Sidebar/Sidebar';
-import { Suspense, useEffect } from 'react';
+import { Suspense } from 'react';
 import { AppRouter } from './provider/router';
 
 const App = () => {

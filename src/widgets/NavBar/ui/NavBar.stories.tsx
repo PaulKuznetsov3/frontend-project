@@ -42,5 +42,3 @@ export const Dark: Story = {
     ],
     args: {},
 };
-
-// OutlineDark.decorators = [TextDecoder(Theme.DARK)]

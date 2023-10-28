@@ -4,6 +4,8 @@
       " Eius vel impedit sed odio explicabo tempore!": " Eius vel impedit sed odio explicabo tempore!"
     }
   },
+  "decrement": "decrement",
+  "increment": "increment",
   "throw error": "throw error",
   "toggle": "toggle",
   "Войти": "Войти",

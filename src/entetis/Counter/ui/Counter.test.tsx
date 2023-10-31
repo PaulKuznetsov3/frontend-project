@@ -23,7 +23,6 @@ describe('Counter', () => {
         componentRender(<Counter />, {
             initialState: { counter: { value: 10 } },
         });
-        console.log(<Counter />);
         userEvent.click(screen.getByTestId('decrement-btn'));
         expect(screen.getByTestId('value-title')).toHaveTextContent('9');
     });

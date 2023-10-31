@@ -15,11 +15,6 @@ const MainPage = () => {
     return (
         <div>
             {t('Главная страница')}
-            <Input
-                placeholder="Введите текст"
-                onChenge={onChange}
-                value={value}
-            />
         </div>
     );
 };

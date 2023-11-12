@@ -10,7 +10,7 @@ type HTMLInputProps = Omit<InputHTMLAttributes<HTMLInputElement>, 'value' | 'onC
 interface InputProps extends HTMLInputProps {
     className?: string;
     value?: string;
-    onChenge?: (value: string) => void;
+    onChange?: (value: string) => void;
     autoFocus?: boolean;
 }
 
@@ -18,7 +18,7 @@ export const Input = memo((props: InputProps) => {
     const {
         className,
         value,
-        onChenge,
+        onChange,
         type = 'text',
         placeholder,
         autoFocus,
@@ -45,7 +45,7 @@ export const Input = memo((props: InputProps) => {
     };
 
     const onChangeHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
-        onChenge?.(e.target.value);
+        onChange?.(e.target.value);
         setCaretPosition(e.target.value.length);
     };
 
